@@ -9,7 +9,7 @@ import {
 import Header from './Header';
 import Landing from './Landing';
 import About from './About';
-import Teachers from './Teachers';
+import Projects from './Projects';
 import Courses from './Courses';
 import NotFound from './NotFound';
 import Featured from './Featured';
@@ -22,7 +22,7 @@ const App = () => (
       <Switch>
         <Route exact path="/" component={Landing} />
         <Route path="/about" render={ () => <About title='About' /> } />
-        <Route exact path="/teachers" component={Teachers} />
+        <Route exact path="/teachers" component={Projects} />
         <Route path="/teachers/:topic/:name" component={Featured} />
         <Route path="/courses" component={Courses} />
         <Route component={NotFound} />

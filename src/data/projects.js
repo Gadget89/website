@@ -1,4 +1,4 @@
-const TeacherList = [
+const ProjectList = [
   {
     name: "Angie McAngular",
     bio: "Angie is a web developer and teacher who is passionate about building scalable, data driven web apps, especially ones that address old problems with new tech!",
@@ -37,4 +37,4 @@ const TeacherList = [
   }
 ];
 
-export default TeacherList;
+export default ProjectList;
