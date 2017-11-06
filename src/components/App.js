@@ -10,7 +10,7 @@ import Header from './Header';
 import Landing from './Landing';
 import About from './About';
 import Projects from './Projects';
-import Courses from './Courses';
+import ContactMe from './ContactMe';
 import NotFound from './NotFound';
 import Featured from './Featured';
 
@@ -24,7 +24,7 @@ const App = () => (
         <Route path="/about" render={ () => <About title='About' /> } />
         <Route exact path="/teachers" component={Projects} />
         <Route path="/teachers/:topic/:name" component={Featured} />
-        <Route path="/courses" component={Courses} />
+        <Route path="/contact" component={ContactMe} />
         <Route component={NotFound} />
       </Switch>
     </div>
