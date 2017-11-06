@@ -1,10 +1,10 @@
-/* ================================= 
+/* =================================
   WEB FONTS
 ==================================== */
 
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700);
 
-/* ================================= 
+/* =================================
   ELEMENT STYLES
 ==================================== */
 
@@ -64,13 +64,13 @@ button {
   border-color: rgba(0,0,0, .1);
 }
 
-/* ================================= 
+/* =================================
   LAYOUT & PAGE STYLES
 ==================================== */
 
 .container {
   width: 95%;
-  max-width: 780px;
+  /*max-width: 780px;*/
   padding-bottom: 2em;
   margin: 0 auto 2em;
   background: #fff;
@@ -79,8 +79,9 @@ button {
   overflow: hidden;
 }
 header {
-  background: #edeff0;
-  margin-bottom: 2em;
+  -webkit-box-shadow: -1px 1px 8px 0 rgba(0,0,0,0.3);
+  box-shadow: -1px 1px 8px 0 rgba(0,0,0,0.3);
+  margin: 2px 0;
 }
 .main-content {
   padding: 1em 2em;
@@ -108,6 +109,9 @@ header {
 }
 
 /* MAIN NAV -------- */
+.main-nav ul {
+  margin: 0 auto;
+}
 
 .main-nav a {
   font-size: .95em;
@@ -116,12 +120,30 @@ header {
   text-transform: uppercase;
   display: block;
   padding: 1em;
-  transition: .2s;
+  /*transition: .2s;*/
 }
 .main-nav a:hover,
 .main-nav .active {
-  color: #fff;
-  background: #3b80d1;
+  border-bottom: 2px solid #FFC107;
+  cursor: pointer;
+  font-weight: bold;
+  height: 15px;
+  /*border-bottom: 2px solid transparent;
+  border-image: linear-gradient(to right, purple 22%, red 36%, orange 48%, yellow 63%, green 76%, blue) 1 100%;*/
+  border-image-slice: 1;
+  padding-bottom: 20px;
+  animation: moveOut .35s linear;
+  -webkit-animation: moveOut .35s linear;
+}
+
+@-webkit-keyframes moveOut{
+    from {padding-bottom: 35px;}
+    to {padding-bottom: 20px;}
+}
+
+@keyframes moveOut {
+    from {padding-bottom: 35px;}
+    to {padding-bottom: 20px;}
 }
 
 /* COURSE NAV -------- */
@@ -149,36 +171,28 @@ header {
 /* ICONS -------- */
 
 .icn-logo {
-  background: #54606b;
-  color: #fff;
-}
-.icn-logo i {
-  font-size: 2.45em;
-  line-height: 0;
-  margin-top: 30px;
-}
-.icn-error {
-  font-size: 3.2em;
-  margin-bottom: .25em;
+  height: 2.5em;
+  width: 2.5em;
+  margin: auto 0;
 }
 
-/* ================================= 
+/* =================================
   MEDIA QUERIES
 ==================================== */
 
-@media (min-width: 0) and (max-width: 768px) { 
+@media (min-width: 0) and (max-width: 420px) {
   body {
-    padding-top: .8em;
+    /*padding-top: .8em;*/
   }
   .home a {
     border-color: transparent;
   }
-   .icn-logo {
+   /*.icn-logo {
      display: block;
      width: 100%;
      text-align: center;
      padding-bottom: 4px;
-   }
+   }*/
    .main-nav a {
      border-top: 2px solid transparent;
      border-bottom: 2px solid transparent;
@@ -203,7 +217,7 @@ header {
 }
 @media (min-width: 769px) {
   body {
-    padding-top: 3em;
+    /*padding-top: 3em;*/
   }
   .home a {
     border-color: #3b80d1;
@@ -216,7 +230,7 @@ header {
   .media > div {
     width: 85.1%;
     margin-left: 1.5em;
-  } 
+  }
   .teacher {
     width: 48.73%;
     margin-bottom: 1.5em;
@@ -229,14 +243,14 @@ header {
     margin-left: 0;
   }
   /* MAIN NAV -------- */
-  .icn-logo {
-    margin-right: auto;
-    padding: 0 2em;
-  }
+
   header,
   .main-nav {
     display: flex;
     flex-wrap: wrap;
+    margin: 0 auto;
+    /*padding-right: 2.5em;*/
+    /*border-bottom: solid blue 2px;*/
   }
   .main-nav a {
     border-left: 3px solid transparent;
@@ -244,12 +258,12 @@ header {
     padding: 1.25em 1.5em;
   }
   .main-nav a:hover {
-    border-color: rgba(0,0,0, .1);
+    /*border-color: rgba(0,0,0, .1);*/
   }
   /* COURSE NAV -------- */
   .course-nav {
     float: right;
-  } 
+  }
   .courses h2 {
     float: left;
   }

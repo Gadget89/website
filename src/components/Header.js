@@ -1,9 +1,11 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
+import Logo from '../assets/logo.png';
+
 const Header = () => (
   <header>
-    <span className="icn-logo">LOGO</span>
+    <img className="icn-logo" src={Logo} alt="" />
     <ul className="main-nav">
       <li><NavLink exact to="/">Home</NavLink></li>
       <li><NavLink to="/about">About</NavLink></li>
