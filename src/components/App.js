@@ -7,7 +7,7 @@ import {
 
 // App components
 import Header from './Header';
-import Home from './Home';
+import Landing from './Landing';
 import About from './About';
 import Teachers from './Teachers';
 import Courses from './Courses';
@@ -18,9 +18,9 @@ const App = () => (
   <BrowserRouter>
     <div className="container">
       <Header />
-      
+
       <Switch>
-        <Route exact path="/" component={Home} />
+        <Route exact path="/" component={Landing} />
         <Route path="/about" render={ () => <About title='About' /> } />
         <Route exact path="/teachers" component={Teachers} />
         <Route path="/teachers/:topic/:name" component={Featured} />
@@ -32,7 +32,3 @@ const App = () => (
 );
 
 export default App;
-
-
-
-
