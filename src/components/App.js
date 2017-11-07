@@ -4,6 +4,7 @@ import {
   Route,
   Switch
 } from 'react-router-dom';
+// import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 
 // App components
 import Header from './Header';

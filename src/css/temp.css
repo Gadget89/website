@@ -1,0 +1,91 @@
+/* =================================
+  MEDIA QUERIES
+==================================== */
+
+@media (min-width: 0) and (max-width: 768px) {
+  body {
+    /*padding-top: .8em;*/
+  }
+  .home a {
+    border-color: transparent;
+  }
+  header {
+    display: none;
+  }
+   /*.icn-logo {
+     display: block;
+     width: 100%;
+     text-align: center;
+     padding-bottom: 4px;
+   }*/
+   .main-nav a {
+     border-top: 2px solid transparent;
+     border-bottom: 2px solid transparent;
+   }
+   .main-nav a:hover {
+     border-color: rgba(0,0,0, .1);
+   }
+   .courses h2 {
+     margin-bottom: 0;
+   }
+   .course-nav {
+     display: block;
+     margin: 1.5em 0 3.2em;
+   }
+   .home a,
+   input,
+   button {
+     display: block;
+     width: 100%;
+     margin-bottom: 1em;
+   }
+}
+@media (min-width: 769px) {
+  body {
+    /*padding-top: 3em;*/
+  }
+  .home a {
+    border-color: #3b80d1;
+  }
+  .media img,
+  .media > div,
+  .teacher {
+    float: left;
+  }
+  .media > div {
+    width: 85.1%;
+    margin-left: 1.5em;
+  }
+  .teacher {
+    width: 48.73%;
+    margin-bottom: 1.5em;
+  }
+  .teacher + .teacher {
+    margin-left: 2.54%;
+  }
+  .teacher:nth-child(2n+3) {
+    clear: left;
+    margin-left: 0;
+  }
+  /* MAIN NAV -------- */
+
+  header,
+  .main-nav {
+    margin: 0 auto;
+  }
+  .main-nav a {
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    padding: 1.25em 1.5em;
+  }
+  .main-nav a:hover {
+    /*border-color: rgba(0,0,0, .1);*/
+  }
+  /* COURSE NAV -------- */
+  .course-nav {
+    float: right;
+  }
+  .courses h2 {
+    float: left;
+  }
+}
