@@ -208,3 +208,30 @@ header {
   width: 2.5em;
   margin: .5em;
 }
+/* =================================
+  MEDIA QUERIES
+==================================== */
+
+@media (min-width: 0) and (max-width: 580px) {
+  header {
+    padding: 0;
+    height: 5.6em;
+  }
+  .main-nav {
+    width: 100%;
+    position: relative;
+  }
+  .main-nav a {
+    padding: 1.1em 0;
+  }
+}
+@media (min-width: 0) and (max-width: 480px) {
+  .icn-logo {
+    display: block;
+    margin: 0 auto;
+    position: relative;
+  }
+  .main-nav li {
+    font-size: .75em;
+  }
+}
