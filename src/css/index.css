@@ -91,7 +91,7 @@ header {
 }
 
 .main-content {
-  padding: 1em 2em;
+  padding: 4.5em 2em 1em;
 }
 .group:after {
   content: "";

@@ -23,8 +23,8 @@ const App = () => (
       <Switch>
         <Route exact path="/" component={Landing} />
         <Route path="/about" render={ () => <About title='About' /> } />
-        <Route exact path="/teachers" component={Projects} />
-        <Route path="/teachers/:topic/:name" component={Featured} />
+        <Route exact path="/projects" component={Projects} />
+        <Route path="/projects/:topic/:name" component={Featured} />
         <Route path="/contact" component={ContactMe} />
         <Route component={NotFound} />
       </Switch>
