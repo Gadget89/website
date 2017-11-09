@@ -63,14 +63,10 @@ button {
   border-color: rgba(0,0,0, .1);
 }
 #canvasoverlay {
-  background-color: blueviolet;
+  background: linear-gradient( white, #FFC107);
   background-image: url(../assets/hero-photo.png);
   background-repeat: no-repeat;
-  /*filter: grayscale();*/
   z-index: -5;
-  /*width: 50%;
-    height: 100%;
-    position: absolute;*/
 }
 
 /* =================================
@@ -258,6 +254,9 @@ header {
   header {
     padding: 0;
     height: 5.38em;
+  }
+  #canvasoverlay {
+    display: none;
   }
 
   .ribbon-syl-1 {

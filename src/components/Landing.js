@@ -12,7 +12,7 @@ class CanvasComponent extends Component {
 
         var canvas = document.getElementById('canvasoverlay');
         // Set canvas height and width to respond to device screen size
-        canvas.width = (window.innerWidth/2);
+        canvas.width = (window.innerWidth);
         canvas.height = window.innerHeight;
 
         var hexHeight,
@@ -33,8 +33,8 @@ class CanvasComponent extends Component {
             var ctx = canvas.getContext('2d');
 
             // ctx.fillStyle = "rgba(255, 255, 255, 0.5)";
-            ctx.strokeStyle = "black";
-            ctx.lineWidth = 1;
+            ctx.strokeStyle = "rgba(255, 255, 255, 0.5)";
+            ctx.lineWidth = 0.5;
 
             drawBoard(ctx, boardWidth, boardHeight);
 
