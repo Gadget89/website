@@ -33,7 +33,7 @@ class CanvasComponent extends Component {
             var ctx = canvas.getContext('2d');
 
             // ctx.fillStyle = "rgba(255, 255, 255, 0.5)";
-            ctx.strokeStyle = "rgba(255, 255, 255, 0.5)";
+            ctx.strokeStyle = "black";
             ctx.lineWidth = 0.5;
 
             drawBoard(ctx, boardWidth, boardHeight);
@@ -120,7 +120,15 @@ class CanvasComponent extends Component {
 
     render() {
         return (
+          <div>
             <canvas id="canvasoverlay"></canvas>
+            <div className="landing-wrapper">
+              <h2 className="landing-heading">Nicolas Roybal</h2>
+              <h3 className="landing-heading">web developer</h3>
+              <h3 className="landing-heading">&</h3>
+              <h3 className="landing-heading">designer</h3>
+            </div>
+          </div>
         );
     }
 }

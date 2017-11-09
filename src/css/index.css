@@ -63,10 +63,33 @@ button {
   border-color: rgba(0,0,0, .1);
 }
 #canvasoverlay {
-  background: linear-gradient( white, #FFC107);
-  background-image: url(../assets/hero-photo.png);
+  /*background: linear-gradient( white, #FFC107);*/
+  /*background-image: url(../assets/hero-photo.png);*/
   background-repeat: no-repeat;
   z-index: -5;
+}
+/*.landing-heading {
+
+    color: #fff;
+    left: 25%;
+    font-size: 3.5em;
+    position: absolute;
+    text-align: center;
+    text-shadow: 2px 4px 3px black;
+    text-transform: uppercase;
+    top: 25%;
+    width: 50%;
+}*/
+.landing-wrapper {
+  color: #fff;
+  left: 25%;
+  font-size: 3.5em;
+  position: absolute;
+  text-align: center;
+  /*text-shadow: 2px 4px 3px black;*/
+  text-transform: uppercase;
+  top: 25%;
+  width: 50%;
 }
 
 /* =================================
@@ -85,8 +108,9 @@ button {
 }
 header {
   -webkit-box-shadow: -1px 1px 2px 0 rgba(0,0,0,0.3);
-  border-top: 2px solid transparent;
-  border-image: radial-gradient(circle, red , orange);
+  border-top: 3px solid transparent;
+  /*border-bottom: 3px solid transparent;*/
+  border-image: radial-gradient(circle, #008080cf , white);
   border-image-slice: 1;
   background-color: #fff;
   box-shadow: -1px 1px 2px 0 rgba(0,0,0,0.3);
@@ -123,27 +147,31 @@ header {
 
 /* MAIN NAV -------- */
 .ribbon-syl-1 {
-  border-top: 2px solid transparent;
-  border-image: radial-gradient(circle, red , orange);
+  border-top: 1px solid transparent;
+  /*border-bottom: 1px solid transparent;*/
+  border-image: radial-gradient(circle, #008080cf white);
   border-image-slice: 1;
   display: inline-block;
 
 }
 .ribbon-syl-2 {
-  border-top: 2px solid transparent;
-  border-image: radial-gradient(circle, yellow , green);
+  border-top: 1px solid transparent;
+  /*border-bottom: 1px solid transparent;*/
+  border-image: radial-gradient(circle, #8333a3, white);
   border-image-slice: 1;
   display: inline-block;
 }
 .ribbon-syl-3 {
-  border-top: 2px solid transparent;
-  border-image: radial-gradient(circle, blue , purple);
+  border-top: 1px solid transparent;
+  /*border-bottom: 1px solid transparent;*/
+  border-image: radial-gradient(circle, #5497de, white);
   border-image-slice: 1;
   display: inline-block;
 }
 .ribbon-syl-4 {
-  border-top: 2px solid transparent;
-  border-image: radial-gradient(circle, purple , red);
+  border-top: 1px solid transparent;
+  /*border-bottom: 1px solid transparent;*/
+  border-image: radial-gradient(circle, #ffb811, white);
   border-image-slice: 1;
   display: inline-block;
 }
@@ -173,7 +201,7 @@ header {
 
 .main-nav li a:hover,
 .main-nav li .active {
-  border-bottom: 2px solid transparent;
+  border-bottom: 1.5px solid transparent;
   cursor: pointer;
   font-weight: bold;
   height: 15px;
@@ -184,25 +212,25 @@ header {
 
 .main-nav li:nth-child(1) a:hover,
 .main-nav li:nth-child(1) .active {
-  border-image: linear-gradient(to right, red, orange) 1 100%;
+  border-image: radial-gradient(circle, #008080cf, white) 1 100%;
   border-image-slice: 1;
 }
 
 .main-nav li:nth-child(2) a:hover,
 .main-nav li:nth-child(2) .active {
-  border-image: linear-gradient(to right, yellow, green) 1 100%;
+  border-image: radial-gradient(circle, #8333a3, white) 1 100%;
   border-image-slice: 1;
 }
 
 .main-nav li:nth-child(3) a:hover,
 .main-nav li:nth-child(3) .active {
-  border-image: linear-gradient(to right, blue, purple) 1 100%;
+  border-image: radial-gradient(circle, #5497de, white) 1 100%;
   border-image-slice: 1;
 }
 
 .main-nav li:nth-child(4) a:hover,
 .main-nav li:nth-child(4) .active {
-  border-image: linear-gradient(to right, purple, red) 1 100%;
+  border-image: radial-gradient(circle,  #ffb811, white) 1 100%;
   border-image-slice: 1;
 }
 
@@ -255,32 +283,35 @@ header {
     padding: 0;
     height: 5.38em;
   }
-  #canvasoverlay {
+  #canvasoverlay  {
+    display: none;
+  }
+  .landing-heading {
     display: none;
   }
 
   .ribbon-syl-1 {
     display: block;
     border-top: 2px solid transparent;
-    border-image: radial-gradient(circle, red , orange);
+    border-image: radial-gradient(circle, #008080cf, white) 1 100%;
     border-image-slice: 1;
   }
   .ribbon-syl-2 {
     display: block;
     border-top: 2px solid transparent;
-    border-image: radial-gradient(circle, yellow , green);
+    border-image: radial-gradient(circle, #8333a3, white) 1 100%;
     border-image-slice: 1;
   }
   .ribbon-syl-3 {
     display: block;
     border-top: 2px solid transparent;
-    border-image: radial-gradient(circle, blue , purple);
+    border-image: radial-gradient(circle, #5497de, white) 1 100%;
     border-image-slice: 1;
   }
   .ribbon-syl-4 {
     display: block;
     border-top: 2px solid transparent;
-    border-image: radial-gradient(circle, purple , red);
+    border-image: radial-gradient(circle,  #ffb811, white) 1 100%;
     border-image-slice: 1;
   }
   .navImgContainer {
