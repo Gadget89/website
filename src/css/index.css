@@ -62,6 +62,16 @@ button {
   cursor: pointer;
   border-color: rgba(0,0,0, .1);
 }
+#canvasoverlay {
+  background-color: blueviolet;
+  background-image: url(../assets/hero-photo.png);
+  background-repeat: no-repeat;
+  /*filter: grayscale();*/
+  z-index: -5;
+  /*width: 50%;
+    height: 100%;
+    position: absolute;*/
+}
 
 /* =================================
   LAYOUT & PAGE STYLES
