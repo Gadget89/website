@@ -12,7 +12,8 @@
   box-sizing: border-box;
 }
 body {
-  color: #576366;
+  /*color: #576366;*/
+  background: radial-gradient(circle, #008080cf , white);
   margin: 0;
   font-family: 'Roboto', sans-serif;
 }
@@ -63,10 +64,19 @@ button {
   border-color: rgba(0,0,0, .1);
 }
 #canvasoverlay {
+  /*display: none;*/
   /*background: linear-gradient( white, #FFC107);*/
   /*background-image: url(../assets/hero-photo.png);*/
+  /*background-repeat: no-repeat;*/
+  position: absolute;
+  z-index: 2;
+}
+.imgOverlay {
+  /*background-image: url(../assets/HexagonGrid.png);*/
   background-repeat: no-repeat;
-  z-index: -5;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
 }
 /*.landing-heading {
 
@@ -118,6 +128,7 @@ header {
   padding: 0 2.5%;
   position: fixed;
   width: 100%;
+  z-index: 10;
 }
 
 .main-content {

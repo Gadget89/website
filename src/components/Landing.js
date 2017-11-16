@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Overlay from '../assets/HexagonGrid.png';
 
 class CanvasComponent extends Component {
 
@@ -32,8 +33,8 @@ class CanvasComponent extends Component {
         if (canvas.getContext){
             var ctx = canvas.getContext('2d');
 
-            // ctx.fillStyle = "rgba(255, 255, 255, 0.5)";
-            ctx.strokeStyle = "black";
+            ctx.fillStyle = "rgba(255, 255, 255, 0.25)";
+            ctx.strokeStyle = "rgba(255, 255, 255, 0.25";
             ctx.lineWidth = 0.5;
 
             drawBoard(ctx, boardWidth, boardHeight);
@@ -73,7 +74,7 @@ class CanvasComponent extends Component {
                         drawHexagon(ctx, screenX, screenY, true);
                     }
                 }
-            });
+            })
         }
 
         function drawBoard(canvasContext, width, height) {
@@ -95,6 +96,7 @@ class CanvasComponent extends Component {
         function drawHexagon(canvasContext, x, y, fill) {
 
           // var fill = fill || false;
+          // ctx.fillStyle = "rgba(255, 255, 255, 0.25)";
 
           canvasContext.beginPath();
           canvasContext.moveTo(x + hexRadius, y);
@@ -122,6 +124,7 @@ class CanvasComponent extends Component {
         return (
           <div>
             <canvas id="canvasoverlay"></canvas>
+          <img src={Overlay} className="imgOverlay" alt=""></img>
             <div className="landing-wrapper">
               <h2 className="landing-heading">Nicolas Roybal</h2>
               <h3 className="landing-heading">web developer</h3>
