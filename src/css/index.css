@@ -13,7 +13,7 @@
 }
 body {
   /*color: #576366;*/
-  background: radial-gradient(circle, #008080cf , white);
+  /* background: radial-gradient(circle, #008080cf , white); */
   margin: 0;
   font-family: 'Roboto', sans-serif;
 }
@@ -120,7 +120,7 @@ header {
   -webkit-box-shadow: -1px 1px 2px 0 rgba(0,0,0,0.3);
   border-top: 3px solid transparent;
   /*border-bottom: 3px solid transparent;*/
-  border-image: radial-gradient(circle, #008080cf , white);
+  border-image: radial-gradient(circle, #0000004d , white);
   border-image-slice: 1;
   background-color: #fff;
   box-shadow: -1px 1px 2px 0 rgba(0,0,0,0.3);
